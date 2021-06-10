@@ -11,10 +11,18 @@
     <link href="E_Commerce.Client.styles.css" rel="stylesheet" />
     <link href="manifest.json" rel="manifest" />
     <link rel="apple-touch-icon" sizes="512x512" href="icon-512.png" />
+    <link rel="stylesheet" href=" _content/Syncfusion.Blazor/styles/bootstrap4.css" />
+    <link href="https://cdn.syncfusion.com/blazor/18.4.42/styles/bootstrap4.css" rel="stylesheet" />
 </head>
 
 <body>
-    <div id="app">Loading...</div>
+    <div id="app">
+        <img id="rotate" class="img-fluid" style="width: 18vh; height: 18vh;" src="images/waiting.png" />
+        <br />
+        <br />
+        <br />
+        <h2 class="font-weight-light" style="color: #ffffff">Loading...</h2>
+    </div>
 
     <div id="blazor-error-ui">
         An unhandled error has occurred.
@@ -26,3 +34,16 @@
 </body>
 
 </html>
+<style>
+    #rotate {
+        animation: rotation 2s infinite linear;
+        margin-top: 35vh;
+        text-align: center;
+    }
+
+    #app {
+        text-align: center;
+        background: linear-gradient(0.25turn, #455b62, #455b63, #6f8b96, #ffffff);
+        height: 100vh;
+    }
+</style>
